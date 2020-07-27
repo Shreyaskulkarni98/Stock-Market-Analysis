@@ -1,0 +1,43 @@
+Q1. (a) How is the data set collected?
+All the data in this dataset was originally fetched from official NSE webiste (nseindia.com). It was compiled and uploaded to Kaggle.com (a website which hosts Machine Learning datasets and competitions) under public domain license and we downloaded the dataset from there.
+
+Q1 (b) How is it preprocessed?
+**Give a detailed explaination of the preprocessing steps that we have used in the work. Read from the ppt or the final document.**
+
+
+Q2. What is the major difference between existing system and proposed system?
+**Cover the following points in your answer:
+1. Currently, there is no machine learning system that is used by professionals who deal with stock martket because of low reliability of the systems produced for this field so far.
+
+2. This is an area of active research so a lot of methods have been proposed by researchers in the past. Talk about the research papers which we included in the 'Literature Survey'. I will send a doc containing only the Lit Survey. REMIND ME IF I DONT
+
+3. Compare the existing systems with our work. Talk about how our work is unique, how it takes under consideration the PCA and dimensionality of the data and hence could give accurate results very fast. 
+
+4. Cover the fact that we are not predicting one particular stock price but the closing price of the NSE market which affects a wide range of stocks. Hence we are not stock specific and are able to achieve high accuracy (internal company decisions are also responsible for fluctuations in the stock prices which is not the case when we talk about the entire market, hence more accuracy.)**
+
+
+Q3. (a) What are the algorithms used?
+We have mainly used two algorithms in this work PCA and Ridge Regression. 
+**I WILL SEND LINKS FROM WHERE YOU CAN READ BUT TBH WE HAVE DISCUSSES ENOUGH**
+ 
+Q3 (b) Whether the proposed algorithm is compared with any other algorithms?
+**NOT AS YET. BUT IT WILL BE. REMIND ME.
+You will have the result in the colab file. I will add comments in the colab notebook if i feel any explaination is necessary.**
+
+Q4. Why PCA calculation is needed?
+It has been used in our work because PCA can helps us do the following:
+
+1. **Explain how PCA looks at data in the vector space (dont stress too much on this part) and tries to obtain independent vectors that be used to re-create (roughly) the entire dataset.**
+So it acts like a very powerful feature extracter. 
+
+2. It helps in dimenstionality reduction without loosing the useful information from the data. Most algorithms fail at stock martet prediction because they either consider very few features for the analysis or take too many features but cannot generalize because of high dimensionality. 
+
+3. PCA helps us filter noises which makes it immune to outliers. Since PCA acts as a feature extractor, it is not highly affected by the presence of outliers.
+
+4. It lets us achieve good results even with less number of features. **We have tested this concept in the implementation** This would enable us to create systems that can make stock predictions on low computation devices like mobile phones. 
+
+
+Q5. What type of database is used and how is it maintained?
+We have not used a database system in this project because we did not require it but we made use of several data structures for handling out data efficiently.
+We used dataframes for storing all the data as we extracted it from the dataset. DataFrames are a very efficient data structure for storing multiple row data. **I WILL SEND A LINK FOR MORE INFO ON THIS**
+We also made use of python lists for storing various inputs and outputs. **MORE ON THIS LATER**
